@@ -1,0 +1,188 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>olx rent</title>    
+    <link rel="stylesheet" href="static\css\style.css">
+</head>
+<body  bgcolor="blanchedalmond">
+	<div class="container">
+		<a2>Please fill the parameters below and click on Selling Price button to check house rents</a2>
+		
+
+
+
+<div class="bg"></div>
+<p align="center" class="heading"><b> House Rent Prediction</b></p>
+<form action="\predict" method="post">
+<div align="center">
+          <div class="b"><b>Type</b><br>
+            <select name="type" class="a">
+        <option value= > ---Please select from drop down--- </option>
+		<option value='House & Villas' > Houses & Villas </option>
+		<option value= 'Apartments' > Apartments </option>
+		<option value= 'Builder floors' > Builder Floors </option></select>
+		</div>
+<br>
+
+<div class="b"><b>Bedrooms</b><br>
+ <select name="bedrooms" class="a">
+<option value= > ---Please select from drop down--- </option>
+<option value= '1' > 1 </option>
+<option value= '2' > 2 </option>
+<option value= '3' > 3 </option>
+<option value= '4' > 4 </option>
+<option value= '5' > 5 </option>
+</option>
+</select>
+<br>
+<div class="b"><b>Bathrooms</b><br>
+ <select name="bathrooms" class="a">
+<option value= > ---Please select from drop down--- </option>
+<option value= '1' > 1 </option>
+<option value= '2' > 2 </option>
+<option value= '3' > 3 </option>
+<option value= '4' > 4 </option>
+<option value= '5' > 5 </option>
+</option>
+</select>
+<br>
+<div class="b"><b>Furnishing</b><br>
+ <select name="furnishing" class="a">
+<option value= > ---Please select from drop down--- </option>
+<option value= 'Furnished' > Furnished </option>
+<option value= 'Unfurnished' > Unfurnished </option>
+<option value= 'Semi-furnished' > Semi-furnished </option>
+</option>
+</select>
+<br>
+<div class="b"><b>Listed By</b><br>
+ <select name="listed by" class="a">
+<option value= > ---Please select from drop down--- </option>
+<option value= 'Owner' > Owner </option>
+<option value= 'Dealer' > Dealer </option>
+<option value= 'Builder' > Builder </option>
+</option>
+</select>
+<br>
+<div class="b"><b>Builtup Area</b><br>
+		<input class="a" type="number" name="super builtup area (ft²)" required="required">
+		</div>
+<br>
+<div class="b"><b>Carpet Area</b><br>
+		<input class="a" type="number" name="carpet area (ft²)" required="required">
+		</div>
+<br>
+
+<div class="b"><b>Bachelors Allowed</b><br>
+ <select name="bachelors allowed" class="a">
+<option value= > ---Please select from drop down--- </option>
+<option value= 'yes' > yes </option>
+<option value= 'no' > no </option>
+</option>
+</select>
+<br>
+
+<div class="b"><b>Maintenance</b><br>
+ 		<input class="a" type="number" name="maintenamaintenance (monthly)" required="required">
+		 </div>
+
+<br>
+<div class="b"><b>Car Parking</b><br>
+ <select name="car parking" class="a">
+<option value= > ---Please select from drop down--- </option>
+<option value= '0' > 0 </option>
+<option value= '1' > 1 </option>
+<option value= '2' > 2 </option>
+<option value= '3' > 3 </option>
+<option value= '4' > 4 </option>
+</option>
+</select>
+<br>
+
+<div class="b"><b>Facing</b><br>
+ <select name="facing" class="a">  <option value= > ---Please select from drop down--- </option>
+<option value= 'north' > north </option>
+<option value= 'north-east' > north-east </option>
+<option value= 'east' > east </option>
+<option value= 'north-west' > north-west </option>
+<option value= 'west' > west </option>
+<option value= 'south' > south </option>
+<option value= 'south-west' > south-west </option>
+<option value= 'south-east' > south-east </option>
+</select>
+<br>
+<div class="b"><b>Total Floors </b><br>
+		<input class="a" type="number" name="total floors" required="required">
+		 </div>
+<br>
+ <div class="b"><b>Floor No </b><br>
+			<input class="a" type="number" name="floor no" required="required">
+			 </div>
+<br>
+
+
+
+<div class="b"><b>City</b><br>
+	<select name="city" class="a">
+		<option value= > ---Please select from drop down--- </option>
+<option value='thane' > thane </option>
+<option value= 'mumbai' > mumbai </option>
+<option value= 'nashik' > nashik </option>
+<option value= 'navi mumbai' > navi mumbai</option>
+<option value= 'pune' > pune </option>
+<option value= 'nagpur' > nagpur </option>
+<option value= 'thiruvanathapuram' > thiruvanathapuram</option>
+<option value= 'kochi' > kochi </option>
+<option value= 'kalpatta' > kalpatta</option>
+<option value= 'alappuzha' > alappuzha</option>
+<option value= 'kottayam' > kottayam</option>
+<option value= 'lucknow' > lucknow</option>
+<option value= 'ghaziabad' > ghaziabad</option>
+<option value= 'meerut' > meerut</option>
+<option value= 'varanasi' > varanasi</option>
+<option value= 'kanpur' > kanpur</option>
+<option value= 'noida' > noida</option>
+<option value= 'greater noida' > greater noida</option>
+<option value= 'agra' > agra</option>
+<option value= 'khurja' > khurja</option>
+</select></div>
+<br>
+
+<div class="b"><b>State</b><br>
+     <select name="state" class="a">
+         <option value= > ---Please select from drop down--- </option>
+<option value='mh' > Maharashtra </option>
+<option value= 'kl' > Kerala </option>
+<option value= 'up' > Uttar Pradesh </option>
+<option value= 'kn' > Karnataka</option>
+<option value= 'tn' > Tamil Nadu </option>
+<option value= 'pb' > Punjab </option>
+<option value= 'gj' > Gujarat</option>
+<option value= 'dl' > Delhi </option>
+<option value= 'mp' > Madhya Pradesh</option>
+<option value= 'rj' > Rajasthan</option>
+<option value= 'wb' > West-Bengal</option>
+<option value= 'hr' > Haryana</option>
+<option value= 'tg' > Telangana</option>
+<option value= 'od' > Odisha</option>
+<option value= 'ap' > Andhra Pradesh</option>
+<option value= 'as' > Assam</option>
+<option value= 'ut' > Uttaranchal</option>
+<option value= 'br' > Bihar</option>
+<option value= 'jr' > Jarkhand</option>
+<option value= 'ch' > Chhattisgarh</option>
+</select></div>
+<br>
+
+
+
+
+
+<br><br><button id="sub" type="submit ">Rent price</button>
+</form>
+<h3>{{ prediction }}<h3>
+<br>
+</div>
+</body>
+</html>
