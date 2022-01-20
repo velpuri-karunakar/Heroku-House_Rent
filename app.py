@@ -8,7 +8,7 @@ import sklearn
 
 
 app = Flask(__name__)
-model = pickle.load(open('/Users/karunakar/Documents/Data Science/VK/SPYDER/rent.pkl','rb'))
+model = pickle.load(open('rent.pkl','rb'))
 @app.route('/',methods=['GET'])
 def Home(): 
     return render_template('rent.html')
