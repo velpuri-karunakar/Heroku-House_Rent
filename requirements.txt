@@ -6,3 +6,6 @@ sklearn
 gunicorn==20.1.0
 catboost
 pickle-mixin
+setuptools==60.6.0
+
+...
